@@ -19,8 +19,8 @@ from rest_framework import routers
 from drf_tutorial.quickstart import views
 
 router = routers.DefaultRouter()
-router.register(r'users', views.UserViewSet)
-router.register(r'groups', views.GroupViewSet)
+router.register('users', views.UserViewSet)
+router.register('groups', views.GroupViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
